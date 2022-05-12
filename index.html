@@ -19,27 +19,28 @@
 <body>
     <!-- Шапка -->
     <header class="header">
-        <div class="container header-flex">
-            <nav class="header-flex">
-                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link active">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты </a></li>
+        <div class="container header__flex">
+            <nav class="header__nav">
+                <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link site-nav__link--active">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты </a></li>
                 </ul>
             </nav>
-            <ul class="auth-nav list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link">
-                        <svg width="16" height="12" class="auth-svg">
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg width="16" height="12" class="contacts__icon">
                             <use href="./images/icons.svg#icon-mail" />
                         </svg>
                         info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link">
-                        <svg width="10" height="16" class="auth-svg">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg width="10" height="16" class="contacts__icon">
                             <use href="./images/icons.svg#icon-phone" />
                         </svg>
                         +38 096 111 11 11
@@ -54,116 +55,120 @@
         <!-- Первый блок -->
         <section class="section-hero">
             <div class="container">
-                <h1 class="title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="section-hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
         <!-- Преймущества -->
-        <section class="section one">
+        <section class="section">
             <div class="container">
                 <!-- в дальнейшем станет прачны-->
                 <h2 class="visually-hidden">Преймущество</h2>
-                <ul class="list list-one">
-                    <li>
-                        <div class="oneblock-icon">
-                            <svg width="70" height="70" class="oneblock-svg">
+                <ul class="benefits">
+                    <li class="benefits__item">
+                        <div class="benefits__icon">
+                            <svg width="70" height="70" class="benefits__svg">
                                 <use href="./images/icons.svg#icon-antenna" />
                             </svg>
                         </div>
-                        <h3 class="subtitle">Внимание к деталям</h3>
-                        <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
+                        <h3 class="benefits__subtitle">Внимание к деталям</h3>
+                        <p class="benefits__text">Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.
                         </p>
                     </li>
-                    <li>
-                        <div class="oneblock-icon">
-                            <svg width="70" height="70" class="oneblock-svg">
+                    <li class="benefits__item">
+                        <div class="benefits__icon">
+                            <svg width="70" height="70" class="benefits__svg">
                                 <use href="./images/icons.svg#icon-clock" />
                             </svg>
                         </div>
-                        <h3 class="subtitle">Пунктуальность</h3>
-                        <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за
+                        <h3 class="benefits__subtitle">Пунктуальность</h3>
+                        <p class="benefits__text">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет за
                             собой.
                         </p>
                     </li>
-                    <li>
-                        <div class="oneblock-icon">
-                            <svg width="70" height="70" class="oneblock-svg">
+                    <li class="benefits__item">
+                        <div class="benefits__icon">
+                            <svg width="70" height="70" class="benefits__svg">
                                 <use href="./images/icons.svg#icon-Vector" />
                             </svg>
                         </div>
-                        <h3 class="subtitle">Планирование</h3>
-                        <p class="text">Равным образом консультация с широким активом в значительной степени
+                        <h3 class="benefits__subtitle">Планирование</h3>
+                        <p class="benefits__text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.
                         </p>
                     </li>
-                    <li>
-                        <div class="oneblock-icon">
-                            <svg width="70" height="70" class="oneblock-svg">
+                    <li class="benefits__item">
+                        <div class="benefits__icon">
+                            <svg width="70" height="70" class="benefits__svg">
                                 <use href="./images/icons.svg#icon-astronaut" />
                             </svg>
                         </div>
-                        <h3 class="subtitle">Современные технологии</h3>
-                        <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <h3 class="benefits__subtitle">Современные технологии</h3>
+                        <p class="benefits__text">Значимость этих проблем настолько очевидна, что реализация плановых
+                            заданий.</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Чем мы занимаемся -->
-        <section class="section two">
+        <section class="section working">
             <div class="container">
-                <h2 class="title">Чем мы занимаемся</h2>
-                <ul class="list-two">
-                    <li class="item"><img src="./images/box1.jpg" alt="коддинг" width="370" height="294" class="img">
-                        <p class="text">Десктопные приложения</p>
+                <h2 class="section__title">Чем мы занимаемся</h2>
+                <ul class="working__list">
+                    <li class="working__item"><img src="./images/box1.jpg" alt="коддинг" width="370" height="294">
+                        <p class="working__text">Десктопные приложения</p>
                     </li>
-                    <li class="item"><img src="./images/box2.jpg" alt="дизайн мобильного приложение" width="370"
+                    <li class="working__item"><img src="./images/box2.jpg" alt="дизайн мобильного приложение"
+                            width="370" height="294">
+                        <p class="working__text">Мобильные приложения</p>
+                    </li>
+                    <li class="working__item"><img src="./images/box3.jpg" alt="подбор палитры цветов" width="370"
                             height="294">
-                        <p class="text">Мобильные приложения</p>
-                    </li>
-                    <li class="item"><img src="./images/box3.jpg" alt="подбор палитры цветов" width="370" height="294">
-                        <p class="text">Дизайнерские решения</p>
+                        <p class="working__text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
         </section>
 
         <!-- Наша команда -->
-        <section class="section comanda">
+        <section class="section team">
             <div class="container">
-                <h1 class="title">Наша команада</h1>
-                <ul class="list">
-                    <li class="comanda-li">
-                        <img src="./images/staff1.jpg" alt="Игорь Демьяненко" width="270">
-                        <div class="comanda-bottom">
-                            <h3 class="subtitle">Игорь Демьяненко</h3>
-                            <p lang="en" class="text">Product Designer</p>
-                            <ul class="soc-list">
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                <h1 class="section__title">Наша команада</h1>
+                <ul class="team__list">
+                    <li class="team__item">
+                        <img src="./images/staff1.jpg" alt="Игорь Демьяненко" width="270" class="team__img">
+                        <div class="team__descr">
+                            <h3 class="team__name">Игорь Демьяненко</h3>
+                            <p lang="en" class="team__title">Product Designer</p>
+                            <ul class="soc-net">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-instagram" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-twitter" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-facebook" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-linkedin" />
                                         </svg>
                                     </a>
@@ -171,36 +176,36 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="comanda-li">
-                        <img src="./images/staff2.jpg" alt="Ольга Репина" width="270">
-                        <div class="comanda-bottom">
-                            <h3 class="subtitle">Ольга Репина</h3>
-                            <p lang="en" class="text">Frontend Developer</p>
-                            <ul class="soc-list">
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                    <li class="team__item">
+                        <img src="./images/staff2.jpg" alt="Ольга Репина" width="270" class="team__img">
+                        <div class="team__descr">
+                            <h3 class="team__name">Ольга Репина</h3>
+                            <p lang="en" class="team__title">Frontend Developer</p>
+                            <ul class="soc-net">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-instagram" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-twitter" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-facebook" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-linkedin" />
                                         </svg>
                                     </a>
@@ -208,36 +213,36 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="comanda-li">
-                        <img src="./images/staff3.jpg" alt="Николай Тарасов" width="270">
-                        <div class="comanda-bottom">
-                            <h3 class="subtitle">Николай Тарасов</h3>
-                            <p lang="en" class="text">Marketing</p>
-                            <ul class="soc-list">
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                    <li class="team__item">
+                        <img src="./images/staff3.jpg" alt="Николай Тарасов" width="270" class="team__img">
+                        <div class="team__descr">
+                            <h3 class="team__name">Николай Тарасов</h3>
+                            <p lang="en" class="team__title">Marketing</p>
+                            <ul class="soc-net">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-instagram" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-twitter" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-facebook" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-linkedin" />
                                         </svg>
                                     </a>
@@ -245,36 +250,36 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="comanda-li">
-                        <img src="./images/staff4.jpg" alt="Михаил Ермаков" width="270">
-                        <div class="comanda-bottom">
-                            <h3 class="subtitle">Михаил Ермаков</h3>
-                            <p lang="en" class="text">UI Designer</p>
-                            <ul class="soc-list">
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                    <li class="team__item">
+                        <img src="./images/staff4.jpg" alt="Михаил Ермаков" width="270" class="team__img">
+                        <div class="team__descr">
+                            <h3 class="team__name">Михаил Ермаков</h3>
+                            <p lang="en" class="team__title">UI Designer</p>
+                            <ul class="soc-net">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-instagram" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-twitter" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-facebook" />
                                         </svg>
                                     </a>
                                 </li>
-                                <li class="soc-item">
-                                    <a href="" class="soc-link">
-                                        <svg width="20" height="20" class="soc-svg">
+                                <li class="soc-net__item">
+                                    <a href="" class="soc-net__link">
+                                        <svg width="20" height="20" class="soc-net__icon">
                                             <use href="./images/icons.svg#icon-linkedin" />
                                         </svg>
                                     </a>
@@ -287,48 +292,48 @@
         </section>
 
         <!-- Постоянные клиенты -->
-        <section class="section client">
+        <section class="section">
             <div class="container">
-                <h2 class="title">Постоянные клиенты</h2>
+                <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="client-list">
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-1" />
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-2" />
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-3" />
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-4" />
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-5" />
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item">
-                        <a href="" class="client-link">
-                            <svg width="106" height="60" class="client-svg">
+                    <li class="client-list__item">
+                        <a href="" class="client-list__link">
+                            <svg width="106" height="60" class="client-list__icon">
                                 <use href="./images/icons.svg#icon-Logo-6" />
                             </svg>
                         </a>
@@ -341,7 +346,7 @@
     <footer class="footer">
         <div class="container footer-div">
             <div class="footer-one">
-                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+                <a href="./index.html" class="logo"><span class="logo__part">Web</span>Studio</a>
                 <address>
                     <ul class="list">
                         <li><a href="https://goo.gl/maps/LCvyeXpGgoU2J2YH6" target="_blank" rel="noreferrer noopener"
@@ -355,31 +360,31 @@
             </div>
             <div class="footer-two">
                 <h3 class="title">присоединяйтесь</h3>
-                <ul class="soc-list">
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                <ul class="soc-net">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-instagram" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-twitter" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-facebook" />
                             </svg>
                         </a>
                     </li>
-                    <li class="soc-item">
-                        <a href="" class="soc-link">
-                            <svg width="20" height="20" class="soc-svg">
+                    <li class="soc-net__item">
+                        <a href="" class="soc-net__link">
+                            <svg width="20" height="20" class="soc-net__icon">
                                 <use href="./images/icons.svg#icon-linkedin" />
                             </svg>
                         </a>

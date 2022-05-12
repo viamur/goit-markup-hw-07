@@ -6,7 +6,7 @@
   line-height: 1.2;
   color: #000000;
   text-decoration: none;
-}
-.logo > span {
-  color: var(--active-color);
+  &__part {
+    color: var(--active-color);
+  }
 }

@@ -1,36 +1,39 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
-.header-flex {
-  display: flex;
-  align-items: center;
+
+  &__flex,
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 }
 /* Почта и номер телефона */
-.auth-nav {
+.contacts {
   display: flex;
   margin-left: auto;
-}
-.auth-nav .item:not(:last-child) {
-  margin-right: 50px;
-}
-.auth-nav .link {
-  display: flex;
-  align-items: center;
 
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
 
-  transition: color var(--animation);
-}
-.auth-svg {
-  fill: currentColor;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
 
-  margin-right: 10px;
-}
-.auth-nav .link:hover,
-.auth-nav .link:focus {
-  color: var(--active-color);
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--active-color);
+    }
+  }
 }

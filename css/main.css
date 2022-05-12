@@ -45,6 +45,15 @@ img {
   padding: 94px 0;
 }
 
+.section__title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -257,7 +266,7 @@ img {
   text-decoration: none;
 }
 
-.logo > span {
+.logo__part {
   color: var(--active-color);
 }
 
@@ -267,11 +276,11 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.site-nav .link {
+.site-nav__link {
   padding: 32px 0;
   position: relative;
   color: var(--title-color);
@@ -282,7 +291,7 @@ img {
   transition: color var(--animation);
 }
 
-.site-nav .link::after {
+.site-nav__link::after {
   content: '';
   display: block;
   width: 100%;
@@ -295,46 +304,48 @@ img {
   transition: background-color var(--animation);
 }
 
-.site-nav .link:hover::after,
-.site-nav .link:focus::after,
-.site-nav .link.active::after {
+.site-nav__link:visited {
+  color: var(--title-color);
+}
+
+.site-nav__link:hover, .site-nav__link:focus {
+  color: var(--active-color);
+}
+
+.site-nav__link:hover::after,
+.site-nav__link:focus::after,
+.site-nav__link--active::after {
   background-color: var(--active-color);
 }
 
-.site-nav .link:visited {
-  color: var(--title-color);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav__link.site-nav__link--active {
   color: var(--active-color);
 }
 
-.site-nav .item .active {
-  color: var(--active-color);
-}
-
-.site-nav .active:hover,
-.site-nav .active:focus {
+.site-nav__link.site-nav__link--active:hover, .site-nav__link.site-nav__link--active:focus {
   color: var(--title-color);
 }
 
-.soc-list {
+.soc-net {
   display: flex;
   justify-content: center;
   color: var(--icon-color);
 }
 
-.soc-item {
+.soc-net__icon {
+  fill: currentColor;
+}
+
+.soc-net__item {
   width: 44px;
   height: 44px;
 }
 
-.soc-item:not(:last-child) {
+.soc-net__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.soc-link {
+.soc-net__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,14 +356,9 @@ img {
   transition: background-color var(--animation), color var(--animation);
 }
 
-.soc-link:hover,
-.soc-link:focus {
+.soc-net__link:hover, .soc-net__link:focus {
   background-color: var(--active-color);
   color: var(--white-color);
-}
-
-.soc-svg {
-  fill: currentColor;
 }
 
 .footer-three {
@@ -396,11 +402,11 @@ img {
 }
 
 /* Преймущества блок */
-.list-one li {
-  flex-basis: calc((100% - 90px) / 4);
+.benefits {
+  display: flex;
 }
 
-.oneblock-icon {
+.benefits__icon {
   display: flex;
   width: 100%;
   height: 120px;
@@ -411,11 +417,11 @@ img {
   border-radius: 4px;
 }
 
-.oneblock-svg {
+.benefits__svg {
   fill: var(--title-color);
 }
 
-.section.one .subtitle {
+.benefits__subtitle {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -424,16 +430,16 @@ img {
   text-transform: uppercase;
 }
 
-.section.one .text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.7;
 }
 
-.list-one {
-  display: flex;
+.benefits__item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
-.list-one li:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -443,22 +449,20 @@ img {
   justify-content: center;
 }
 
-.client-item {
+.client-list__icon {
+  fill: currentColor;
+}
+
+.client-list__item {
   width: 170px;
   height: 92px;
 }
 
-.client-item:not(:last-child) {
+.client-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link:hover,
-.client-link:focus {
-  color: var(--active-color);
-  border-color: var(--active-color);
-}
-
-.client-link {
+.client-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -470,39 +474,36 @@ img {
   transition: border-color var(--animation), color var(--animation);
 }
 
-.client-svg {
-  fill: currentColor;
+.client-list__link:hover, .client-list__link:focus {
+  color: var(--active-color);
+  border-color: var(--active-color);
 }
 
 /* Третий блок */
-.section.comanda {
+.team {
   background-color: #f5f4fa;
 }
 
-.comanda .list {
+.team__list {
   display: flex;
 }
 
-.comanda-li {
+.team__item {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   padding-bottom: 30px;
 }
 
-.comanda-li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.comanda img {
+.team__img {
   margin-bottom: 30px;
 }
 
-.comanda-li .text {
-  margin-bottom: 16px;
+.team__descr {
+  padding: 0 15px;
 }
 
-.section.comanda .subtitle {
+.team__name {
   margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 500;
@@ -511,13 +512,14 @@ img {
   text-align: center;
 }
 
-.section.comanda .text {
+.team__title {
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 16px;
 }
 
-.comanda-bottom {
-  padding: 0 15px;
+.team__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .footer {
@@ -592,22 +594,27 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-flex {
+.header__flex, .header__nav {
   display: flex;
   align-items: center;
 }
 
 /* Почта и номер телефона */
-.auth-nav {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.auth-nav .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.auth-nav .link {
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contacts__link {
   display: flex;
   align-items: center;
   color: var(--text-color);
@@ -618,13 +625,7 @@ img {
   transition: color var(--animation);
 }
 
-.auth-svg {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.auth-nav .link:hover,
-.auth-nav .link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--active-color);
 }
 
@@ -637,7 +638,7 @@ img {
   background-size: 1600px;
 }
 
-.section-hero .title {
+.section-hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
@@ -760,28 +761,19 @@ img {
 }
 
 /* ВТОРОЙ БЛОК */
-.section.two {
+.working {
   padding-top: 0;
 }
 
-.section .title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-color);
-}
-
-.list-two {
+.working__list {
   display: flex;
 }
 
-.list-two .item {
+.working__item {
   position: relative;
 }
 
-.list-two .text {
+.working__text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -797,7 +789,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.list-two li:not(:last-child) {
+.working__item:not(:last-child) {
   margin-right: 30px;
 }
 
