@@ -14,11 +14,23 @@
   border-radius: 4px;
 
   transition: transform var(--animation);
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    color: var(--title-color);
+  }
+  &__icon--close {
+    transition: fill var(--animation);
+    fill: var(--title-color);
+  }
 }
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
-}
-.modal-btn {
+// кнопка закрыть
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -30,13 +42,13 @@
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.close-svg {
-  transition: fill var(--animation);
 
-  fill: var(--title-color);
+  &:focus .modal__icon--close,
+  &:hover .modal__icon--close {
+    fill: var(--active-color);
+  }
 }
-.modal-btn:focus .close-svg,
-.modal-btn:hover .close-svg {
-  fill: var(--active-color);
+// применяется при видимости модального окна
+.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
 }

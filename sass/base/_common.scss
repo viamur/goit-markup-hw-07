@@ -1,6 +1,6 @@
 // для боди
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family-roboto);
   letter-spacing: 0.03em;
   background-color: var(--white-color);
   color: var(--text-color);
