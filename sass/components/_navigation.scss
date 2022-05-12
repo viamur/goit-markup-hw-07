@@ -1,0 +1,58 @@
+/* Главное меню */
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav .link {
+  padding: 32px 0;
+
+  position: relative;
+
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  transition: color var(--animation);
+}
+.site-nav .link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  border-radius: 2px;
+  background-color: transparent;
+
+  transition: background-color var(--animation);
+}
+.site-nav .link:hover::after,
+.site-nav .link:focus::after,
+.site-nav .link.active::after {
+  background-color: var(--active-color);
+}
+
+.site-nav .link:visited {
+  color: var(--title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--active-color);
+}
+.site-nav .item .active {
+  color: var(--active-color);
+}
+.site-nav .active:hover,
+.site-nav .active:focus {
+  color: var(--title-color);
+}
